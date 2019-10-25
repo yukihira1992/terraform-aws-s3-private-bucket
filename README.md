@@ -22,10 +22,10 @@ module "private_s3_bucket" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | bucket | The name of the bucket. | string | n/a | yes |
-| region | If specified, the AWS region this bucket should reside in. | string | null | no |
-| versioning_enabled | Enable versioning. | bool | false | no |
+| region | If specified, the AWS region this bucket should reside in. | string | `null` | no |
+| versioning_enabled | Enable versioning. | bool | `false` | no |
 | sse_algorithm | The server-side encryption algorithm to use. Valid values are AES256 and aws:kms | string | `"AES256"` | no |
-| kms_master_key_id | The AWS KMS master key ID used for the SSE-KMS encryption. This can only be used when you set the value of sse_algorithm as aws:kms. | string | null | no |
+| kms_master_key_id | The AWS KMS master key ID used for the SSE-KMS encryption. This can only be used when you set the value of sse_algorithm as aws:kms. | string | `null` | no |
 | tags | A mapping of tags that identifies subset of objects to which the rule applies. | map(string) | `{}` | no |
 
 
