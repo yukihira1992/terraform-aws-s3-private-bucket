@@ -2,11 +2,6 @@ variable "bucket" {
   description = "The name of the bucket."
 }
 
-variable "region" {
-  description = "If specified, the AWS region this bucket should reside in."
-  default = null
-}
-
 variable "versioning_enabled" {
   description = "Enable versioning."
   default = false
